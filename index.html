@@ -3,7 +3,7 @@
 <html lang="en">
 <head><meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>320Final_Project (2)</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>320Final_Project (2) (1)</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <style type="text/css">
     pre { line-height: 125%; }
 td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
@@ -7825,11 +7825,11 @@ a.anchor-link {
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h2 id="Contributions:">Contributions:<a class="anchor-link" href="#Contributions:">¶</a></h2><ul>
-<li>Milkii Dagne (C,F,G): I worked on the t-test to determine whether the peak day of the week and peak time of day of accidents differ from the average and analzing the results. I also worked on the displaying summary statistics for both datasets. I did the introduction for the final report as well as formatting</li>
+<li>Milkii Dagne (C,F,G): I worked on the t-test to determine whether the peak day of the week and peak time of day of accidents differ from the average and analyzing the results. I also worked on the displaying summary statistics for both datasets. I did the introduction for the final report as well as formatting</li>
 <li>Anya Jain (C,F,G): Added visualizations including severity distribution charts, a temperature box plot, and a correlation heatmap. Fixed inaccurate statistics in the report and added a class imbalance analysis in the ML section.</li>
 <li>Priyanka Meduri (C, E, F): Created the crash by day and crash by hour visualizations and did Final Insights and Conclusion. Also interpreted the Random Forest feature importance plot and confusion matrix.</li>
 <li>Sruthi Kavuri (D, E): I worked on machine learning model development and training for accident severity prediction, as well as the chi-square test to determine is roadway surface conditions were related to the crash type.</li>
-<li>Habeke Mesfin (B): Responsible for dataset curation and preprocessing. Downloaded and imported the Kaggle traffic accident datasets, selected relevant variables, cleaned missing and invalid values, converted datetime and numeric columns into usable formats, perormed feature engineering and prepared the dataset for later statistical analysis and machine learning.</li>
+<li>Habeke Mesfin (B): Responsible for dataset curation and preprocessing. Downloaded and imported the Kaggle traffic accident datasets, selected relevant variables, cleaned missing and invalid values, converted datetime and numeric columns into usable formats, performed feature engineering and prepared the dataset for later statistical analysis and machine learning.</li>
 <li>Noah Bissel: (C, E, G) Worked on visualizing how crash types vary by surface conditions in the EDA stage, and also worked on tweaking the selected features and random forest model training parameters to improve the balance of recall and precision.</li>
 </ul>
 </div>
@@ -7917,7 +7917,7 @@ Answering these questions matters because the consequences of traffic accidents 
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [220]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">kagglehub</span>
@@ -7973,7 +7973,7 @@ Using Colab cache for faster access to the 'traffic-accidents' dataset.
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [221]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">csv1path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">dataset1path</span><span class="p">,</span> <span class="s1">'US_Accidents_March23.csv'</span><span class="p">)</span>
@@ -7991,7 +7991,7 @@ Using Colab cache for faster access to the 'traffic-accidents' dataset.
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [222]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">"US Accidents Dataset:"</span><span class="p">,</span> <span class="n">df1</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
@@ -8031,7 +8031,7 @@ Traffic Accidents shape: (209306, 24)
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [223]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">df1</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
@@ -8045,9 +8045,9 @@ Traffic Accidents shape: (209306, 24)
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[ ]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[223]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
-<div class="colab-df-container" id="df-3462d4f1-3390-4eb3-bd60-4f92e0ce3c3c">
+<div class="colab-df-container" id="df-6a16ae87-0abd-4621-86de-53b341a1eac1">
 <div>
 <style scoped="">
     .dataframe tbody tr th:only-of-type {
@@ -8216,7 +8216,7 @@ Traffic Accidents shape: (209306, 24)
 </div>
 <div class="colab-df-buttons">
 <div class="colab-df-container">
-<button class="colab-df-convert" onclick="convertToInteractive('df-3462d4f1-3390-4eb3-bd60-4f92e0ce3c3c')" style="display:none;" title="Convert this dataframe to an interactive table.">
+<button class="colab-df-convert" onclick="convertToInteractive('df-6a16ae87-0abd-4621-86de-53b341a1eac1')" style="display:none;" title="Convert this dataframe to an interactive table.">
 <svg height="24px" viewbox="0 -960 960 960" xmlns="http://www.w3.org/2000/svg">
 <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"></path>
 </svg>
@@ -8263,12 +8263,12 @@ Traffic Accidents shape: (209306, 24)
   </style>
 <script>
       const buttonEl =
-        document.querySelector('#df-3462d4f1-3390-4eb3-bd60-4f92e0ce3c3c button.colab-df-convert');
+        document.querySelector('#df-6a16ae87-0abd-4621-86de-53b341a1eac1 button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-3462d4f1-3390-4eb3-bd60-4f92e0ce3c3c');
+        const element = document.querySelector('#df-6a16ae87-0abd-4621-86de-53b341a1eac1');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -8297,7 +8297,7 @@ Traffic Accidents shape: (209306, 24)
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [224]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">df2</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
@@ -8311,9 +8311,9 @@ Traffic Accidents shape: (209306, 24)
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[ ]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[224]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
-<div class="colab-df-container" id="df-8d4bfe97-b06b-4b16-bd1b-b94e9296c183">
+<div class="colab-df-container" id="df-80eec70c-ddcf-4df6-848f-090b46283848">
 <div>
 <style scoped="">
     .dataframe tbody tr th:only-of-type {
@@ -8482,7 +8482,7 @@ Traffic Accidents shape: (209306, 24)
 </div>
 <div class="colab-df-buttons">
 <div class="colab-df-container">
-<button class="colab-df-convert" onclick="convertToInteractive('df-8d4bfe97-b06b-4b16-bd1b-b94e9296c183')" style="display:none;" title="Convert this dataframe to an interactive table.">
+<button class="colab-df-convert" onclick="convertToInteractive('df-80eec70c-ddcf-4df6-848f-090b46283848')" style="display:none;" title="Convert this dataframe to an interactive table.">
 <svg height="24px" viewbox="0 -960 960 960" xmlns="http://www.w3.org/2000/svg">
 <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"></path>
 </svg>
@@ -8529,12 +8529,12 @@ Traffic Accidents shape: (209306, 24)
   </style>
 <script>
       const buttonEl =
-        document.querySelector('#df-8d4bfe97-b06b-4b16-bd1b-b94e9296c183 button.colab-df-convert');
+        document.querySelector('#df-80eec70c-ddcf-4df6-848f-090b46283848 button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-8d4bfe97-b06b-4b16-bd1b-b94e9296c183');
+        const element = document.querySelector('#df-80eec70c-ddcf-4df6-848f-090b46283848');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -8585,7 +8585,7 @@ Traffic Accidents shape: (209306, 24)
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [225]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">"Original number of columns in df1:"</span><span class="p">,</span> <span class="n">df1</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
@@ -8614,7 +8614,7 @@ Original number of columns in df2: 24
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [226]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">selected_columns</span> <span class="o">=</span> <span class="p">[</span>
@@ -8660,7 +8660,7 @@ Original number of columns in df2: 24
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [227]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">df1</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
@@ -8674,9 +8674,9 @@ Original number of columns in df2: 24
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[ ]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[227]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
-<div class="colab-df-container" id="df-5b8c7beb-20da-40ba-adcc-514f77ecaeaa">
+<div class="colab-df-container" id="df-9a9e4dc1-3066-41c1-abd7-2cf2ad4badd7">
 <div>
 <style scoped="">
     .dataframe tbody tr th:only-of-type {
@@ -8820,7 +8820,7 @@ Original number of columns in df2: 24
 </div>
 <div class="colab-df-buttons">
 <div class="colab-df-container">
-<button class="colab-df-convert" onclick="convertToInteractive('df-5b8c7beb-20da-40ba-adcc-514f77ecaeaa')" style="display:none;" title="Convert this dataframe to an interactive table.">
+<button class="colab-df-convert" onclick="convertToInteractive('df-9a9e4dc1-3066-41c1-abd7-2cf2ad4badd7')" style="display:none;" title="Convert this dataframe to an interactive table.">
 <svg height="24px" viewbox="0 -960 960 960" xmlns="http://www.w3.org/2000/svg">
 <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"></path>
 </svg>
@@ -8867,12 +8867,12 @@ Original number of columns in df2: 24
   </style>
 <script>
       const buttonEl =
-        document.querySelector('#df-5b8c7beb-20da-40ba-adcc-514f77ecaeaa button.colab-df-convert');
+        document.querySelector('#df-9a9e4dc1-3066-41c1-abd7-2cf2ad4badd7 button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-5b8c7beb-20da-40ba-adcc-514f77ecaeaa');
+        const element = document.querySelector('#df-9a9e4dc1-3066-41c1-abd7-2cf2ad4badd7');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -8934,7 +8934,7 @@ Original number of columns in df2: 24
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [228]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">df1</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
@@ -8948,7 +8948,7 @@ Original number of columns in df2: 24
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[ ]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[228]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -9052,7 +9052,7 @@ Original number of columns in df2: 24
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [229]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">df1</span> <span class="o">=</span> <span class="n">df1</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">"UNKNOWN"</span><span class="p">,</span> <span class="n">pd</span><span class="o">.</span><span class="n">NA</span><span class="p">)</span>
@@ -9068,7 +9068,7 @@ Original number of columns in df2: 24
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [230]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">df1</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
@@ -9082,7 +9082,7 @@ Original number of columns in df2: 24
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[ ]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[230]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -9186,7 +9186,7 @@ Original number of columns in df2: 24
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [231]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">"df1 shape after cleaning:"</span><span class="p">,</span> <span class="n">df1</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
@@ -9247,7 +9247,7 @@ Original number of columns in df2: 24
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [232]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="c1"># Convert Start_Time to datetime</span>
@@ -9277,7 +9277,7 @@ Original number of columns in df2: 24
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [233]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="c1"># Convert crash_date in df2</span>
@@ -9316,7 +9316,7 @@ Original number of columns in df2: 24
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [234]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="c1"># Feature engineering</span>
@@ -9333,7 +9333,7 @@ Original number of columns in df2: 24
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [235]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">df1</span><span class="p">[[</span><span class="s1">'Start_Time'</span><span class="p">,</span> <span class="s1">'Hour'</span><span class="p">,</span> <span class="s1">'Month'</span><span class="p">,</span> <span class="s1">'DayOfWeek'</span><span class="p">]]</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
@@ -9347,9 +9347,9 @@ Original number of columns in df2: 24
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[ ]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[235]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
-<div class="colab-df-container" id="df-20cdfd70-2e1c-47e9-a49f-655057501aad">
+<div class="colab-df-container" id="df-72c21943-171a-4ce2-af18-9ffb84615fb5">
 <div>
 <style scoped="">
     .dataframe tbody tr th:only-of-type {
@@ -9415,7 +9415,7 @@ Original number of columns in df2: 24
 </div>
 <div class="colab-df-buttons">
 <div class="colab-df-container">
-<button class="colab-df-convert" onclick="convertToInteractive('df-20cdfd70-2e1c-47e9-a49f-655057501aad')" style="display:none;" title="Convert this dataframe to an interactive table.">
+<button class="colab-df-convert" onclick="convertToInteractive('df-72c21943-171a-4ce2-af18-9ffb84615fb5')" style="display:none;" title="Convert this dataframe to an interactive table.">
 <svg height="24px" viewbox="0 -960 960 960" xmlns="http://www.w3.org/2000/svg">
 <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"></path>
 </svg>
@@ -9462,12 +9462,12 @@ Original number of columns in df2: 24
   </style>
 <script>
       const buttonEl =
-        document.querySelector('#df-20cdfd70-2e1c-47e9-a49f-655057501aad button.colab-df-convert');
+        document.querySelector('#df-72c21943-171a-4ce2-af18-9ffb84615fb5 button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-20cdfd70-2e1c-47e9-a49f-655057501aad');
+        const element = document.querySelector('#df-72c21943-171a-4ce2-af18-9ffb84615fb5');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -9496,7 +9496,7 @@ Original number of columns in df2: 24
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [236]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">df1</span><span class="p">[</span><span class="n">numeric_cols_df1</span><span class="p">]</span><span class="o">.</span><span class="n">dtypes</span>
@@ -9510,7 +9510,7 @@ Original number of columns in df2: 24
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[ ]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[236]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -9554,7 +9554,7 @@ Original number of columns in df2: 24
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [237]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">df2</span><span class="p">[</span><span class="n">numeric_cols_df2</span><span class="p">]</span><span class="o">.</span><span class="n">dtypes</span>
@@ -9568,7 +9568,7 @@ Original number of columns in df2: 24
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[ ]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[237]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -9677,7 +9677,7 @@ Original number of columns in df2: 24
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [238]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">categorical_columns</span> <span class="o">=</span> <span class="p">[</span>
@@ -9699,9 +9699,9 @@ Original number of columns in df2: 24
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[ ]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[238]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
-<div class="colab-df-container" id="df-ddea7d00-e52f-4533-a851-d30c52884f12">
+<div class="colab-df-container" id="df-57f0502c-5588-4d97-9faf-d061c3eaf81f">
 <div>
 <style scoped="">
     .dataframe tbody tr th:only-of-type {
@@ -9773,7 +9773,7 @@ Original number of columns in df2: 24
 </div>
 <div class="colab-df-buttons">
 <div class="colab-df-container">
-<button class="colab-df-convert" onclick="convertToInteractive('df-ddea7d00-e52f-4533-a851-d30c52884f12')" style="display:none;" title="Convert this dataframe to an interactive table.">
+<button class="colab-df-convert" onclick="convertToInteractive('df-57f0502c-5588-4d97-9faf-d061c3eaf81f')" style="display:none;" title="Convert this dataframe to an interactive table.">
 <svg height="24px" viewbox="0 -960 960 960" xmlns="http://www.w3.org/2000/svg">
 <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"></path>
 </svg>
@@ -9820,12 +9820,12 @@ Original number of columns in df2: 24
   </style>
 <script>
       const buttonEl =
-        document.querySelector('#df-ddea7d00-e52f-4533-a851-d30c52884f12 button.colab-df-convert');
+        document.querySelector('#df-57f0502c-5588-4d97-9faf-d061c3eaf81f button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-ddea7d00-e52f-4533-a851-d30c52884f12');
+        const element = document.querySelector('#df-57f0502c-5588-4d97-9faf-d061c3eaf81f');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -9854,7 +9854,7 @@ Original number of columns in df2: 24
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [239]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.preprocessing</span><span class="w"> </span><span class="kn">import</span> <span class="n">LabelEncoder</span>
@@ -9875,7 +9875,7 @@ Original number of columns in df2: 24
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [240]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">df1</span><span class="p">[</span><span class="n">categorical_columns</span><span class="p">]</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
@@ -9889,9 +9889,9 @@ Original number of columns in df2: 24
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[ ]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[240]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
-<div class="colab-df-container" id="df-9ccc657c-8288-422d-a988-f6babae8415e">
+<div class="colab-df-container" id="df-ef375cf1-1f0c-4f32-8784-bc005c854170">
 <div>
 <style scoped="">
     .dataframe tbody tr th:only-of-type {
@@ -9963,7 +9963,7 @@ Original number of columns in df2: 24
 </div>
 <div class="colab-df-buttons">
 <div class="colab-df-container">
-<button class="colab-df-convert" onclick="convertToInteractive('df-9ccc657c-8288-422d-a988-f6babae8415e')" style="display:none;" title="Convert this dataframe to an interactive table.">
+<button class="colab-df-convert" onclick="convertToInteractive('df-ef375cf1-1f0c-4f32-8784-bc005c854170')" style="display:none;" title="Convert this dataframe to an interactive table.">
 <svg height="24px" viewbox="0 -960 960 960" xmlns="http://www.w3.org/2000/svg">
 <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"></path>
 </svg>
@@ -10010,12 +10010,12 @@ Original number of columns in df2: 24
   </style>
 <script>
       const buttonEl =
-        document.querySelector('#df-9ccc657c-8288-422d-a988-f6babae8415e button.colab-df-convert');
+        document.querySelector('#df-ef375cf1-1f0c-4f32-8784-bc005c854170 button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-9ccc657c-8288-422d-a988-f6babae8415e');
+        const element = document.querySelector('#df-ef375cf1-1f0c-4f32-8784-bc005c854170');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -10077,7 +10077,7 @@ Original number of columns in df2: 24
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [241]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">numeric_df</span> <span class="o">=</span> <span class="n">df1</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">pd</span><span class="o">.</span><span class="n">to_numeric</span><span class="p">,</span> <span class="n">errors</span><span class="o">=</span><span class="s1">'coerce'</span><span class="p">)</span>
@@ -10092,7 +10092,7 @@ Original number of columns in df2: 24
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [242]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">numeric_df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
@@ -10106,9 +10106,9 @@ Original number of columns in df2: 24
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[ ]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[242]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
-<div class="colab-df-container" id="df-4632c041-4e39-405c-9709-9455d29a9f7e">
+<div class="colab-df-container" id="df-4bca4383-e98c-4b7e-bd6e-d083d8476684">
 <div>
 <style scoped="">
     .dataframe tbody tr th:only-of-type {
@@ -10258,7 +10258,7 @@ Original number of columns in df2: 24
 </div>
 <div class="colab-df-buttons">
 <div class="colab-df-container">
-<button class="colab-df-convert" onclick="convertToInteractive('df-4632c041-4e39-405c-9709-9455d29a9f7e')" style="display:none;" title="Convert this dataframe to an interactive table.">
+<button class="colab-df-convert" onclick="convertToInteractive('df-4bca4383-e98c-4b7e-bd6e-d083d8476684')" style="display:none;" title="Convert this dataframe to an interactive table.">
 <svg height="24px" viewbox="0 -960 960 960" xmlns="http://www.w3.org/2000/svg">
 <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"></path>
 </svg>
@@ -10305,12 +10305,12 @@ Original number of columns in df2: 24
   </style>
 <script>
       const buttonEl =
-        document.querySelector('#df-4632c041-4e39-405c-9709-9455d29a9f7e button.colab-df-convert');
+        document.querySelector('#df-4bca4383-e98c-4b7e-bd6e-d083d8476684 button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-4632c041-4e39-405c-9709-9455d29a9f7e');
+        const element = document.querySelector('#df-4bca4383-e98c-4b7e-bd6e-d083d8476684');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -10339,7 +10339,7 @@ Original number of columns in df2: 24
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [243]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">numeric_df</span><span class="o">.</span><span class="n">dtypes</span>
@@ -10353,7 +10353,7 @@ Original number of columns in df2: 24
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[ ]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[243]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -10474,7 +10474,7 @@ Original number of columns in df2: 24
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Exploratory-data-analysis">Exploratory data analysis<a class="anchor-link" href="#Exploratory-data-analysis">¶</a></h2>
+<h2 id="Exploratory-Data-Analysis">Exploratory Data Analysis<a class="anchor-link" href="#Exploratory-Data-Analysis">¶</a></h2>
 </div>
 </div>
 </div>
@@ -10483,7 +10483,7 @@ Original number of columns in df2: 24
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [244]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="c1"># Dataset 1:</span>
@@ -10516,7 +10516,7 @@ Preview of the dataset:
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
-<div class="colab-df-container" id="df-cd3f7e0c-a89f-4fb7-af29-6d89ca5ec2b4">
+<div class="colab-df-container" id="df-e40f3986-51c8-4e2b-824e-fda111380bc2">
 <div>
 <style scoped="">
     .dataframe tbody tr th:only-of-type {
@@ -10678,7 +10678,7 @@ Preview of the dataset:
 </div>
 <div class="colab-df-buttons">
 <div class="colab-df-container">
-<button class="colab-df-convert" onclick="convertToInteractive('df-cd3f7e0c-a89f-4fb7-af29-6d89ca5ec2b4')" style="display:none;" title="Convert this dataframe to an interactive table.">
+<button class="colab-df-convert" onclick="convertToInteractive('df-e40f3986-51c8-4e2b-824e-fda111380bc2')" style="display:none;" title="Convert this dataframe to an interactive table.">
 <svg height="24px" viewbox="0 -960 960 960" xmlns="http://www.w3.org/2000/svg">
 <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"></path>
 </svg>
@@ -10725,12 +10725,12 @@ Preview of the dataset:
   </style>
 <script>
       const buttonEl =
-        document.querySelector('#df-cd3f7e0c-a89f-4fb7-af29-6d89ca5ec2b4 button.colab-df-convert');
+        document.querySelector('#df-e40f3986-51c8-4e2b-824e-fda111380bc2 button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-cd3f7e0c-a89f-4fb7-af29-6d89ca5ec2b4');
+        const element = document.querySelector('#df-e40f3986-51c8-4e2b-824e-fda111380bc2');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -10759,7 +10759,7 @@ Preview of the dataset:
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [245]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="c1"># Dataset 2:</span>
@@ -10792,7 +10792,7 @@ Preview of the dataset:
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
-<div class="colab-df-container" id="df-53199c43-4bf4-41d8-b8a6-dedabaa78b61">
+<div class="colab-df-container" id="df-02fd7cfd-c120-4425-bd0c-f34f85f4a483">
 <div>
 <style scoped="">
     .dataframe tbody tr th:only-of-type {
@@ -10961,7 +10961,7 @@ Preview of the dataset:
 </div>
 <div class="colab-df-buttons">
 <div class="colab-df-container">
-<button class="colab-df-convert" onclick="convertToInteractive('df-53199c43-4bf4-41d8-b8a6-dedabaa78b61')" style="display:none;" title="Convert this dataframe to an interactive table.">
+<button class="colab-df-convert" onclick="convertToInteractive('df-02fd7cfd-c120-4425-bd0c-f34f85f4a483')" style="display:none;" title="Convert this dataframe to an interactive table.">
 <svg height="24px" viewbox="0 -960 960 960" xmlns="http://www.w3.org/2000/svg">
 <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"></path>
 </svg>
@@ -11008,12 +11008,12 @@ Preview of the dataset:
   </style>
 <script>
       const buttonEl =
-        document.querySelector('#df-53199c43-4bf4-41d8-b8a6-dedabaa78b61 button.colab-df-convert');
+        document.querySelector('#df-02fd7cfd-c120-4425-bd0c-f34f85f4a483 button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-53199c43-4bf4-41d8-b8a6-dedabaa78b61');
+        const element = document.querySelector('#df-02fd7cfd-c120-4425-bd0c-f34f85f4a483');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -11042,7 +11042,7 @@ Preview of the dataset:
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [246]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">df1</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
@@ -11095,7 +11095,7 @@ memory usage: 307.7+ KB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [247]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">df2</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
@@ -11152,7 +11152,7 @@ memory usage: 38.3+ MB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [248]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
@@ -11229,7 +11229,7 @@ memory usage: 38.3+ MB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [249]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
@@ -11281,7 +11281,7 @@ P-value: 0.39915166761642606
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [250]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">severity_counts</span> <span class="o">=</span> <span class="n">df1</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">'timeOfDay'</span><span class="p">,</span> <span class="s1">'Severity'</span><span class="p">])</span><span class="o">.</span><span class="n">size</span><span class="p">()</span><span class="o">.</span><span class="n">unstack</span><span class="p">()</span>
@@ -11335,7 +11335,7 @@ P-value: 0.39915166761642606
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [251]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
@@ -11404,7 +11404,7 @@ P-value: 0.39915166761642606
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [252]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
@@ -11460,7 +11460,7 @@ Peak hour: 17, t = 1.77, p = 0.0903
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [253]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
@@ -11555,7 +11555,7 @@ Peak hour: 17, t = 1.77, p = 0.0903
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [254]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
@@ -11612,7 +11612,7 @@ p-value:  0.0
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [255]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
@@ -11649,7 +11649,7 @@ p-value:  0.0
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [256]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">seaborn</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">sns</span>
@@ -11696,7 +11696,7 @@ Importantly, Severity shows weak correlations with all individual features, with
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Primary-analysis">Primary analysis<a class="anchor-link" href="#Primary-analysis">¶</a></h2>
+<h2 id="Primary-Analysis">Primary Analysis<a class="anchor-link" href="#Primary-Analysis">¶</a></h2>
 </div>
 </div>
 </div>
@@ -11716,7 +11716,7 @@ Importantly, Severity shows weak correlations with all individual features, with
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [219]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
@@ -11729,19 +11729,7 @@ Importantly, Severity shows weak correlations with all individual features, with
 <span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.model_selection</span><span class="w"> </span><span class="kn">import</span> <span class="n">StratifiedKFold</span>
 <span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.model_selection</span><span class="w"> </span><span class="kn">import</span> <span class="n">cross_val_score</span>
 <span class="c1"># selecting all the features for the ml model</span>
-<span class="c1"># ml_df = df1[[</span>
-<span class="c1">#     'Severity',</span>
-<span class="c1">#     'Hour',</span>
-<span class="c1">#     'Visibility(mi)',</span>
-<span class="c1">#     'Temperature(F)',</span>
-<span class="c1">#     'Humidity(%)',</span>
-<span class="c1">#     'Wind_Speed(mph)',</span>
-<span class="c1">#     'Weather_Condition',</span>
-<span class="c1">#     'Traffic_Signal',</span>
-<span class="c1">#     'Junction',</span>
-<span class="c1">#     'Crossing',</span>
-<span class="c1">#     'Stop'</span>
-<span class="c1"># ]].dropna()</span>
+
 
 <span class="n">ml_df</span> <span class="o">=</span> <span class="n">df1</span><span class="p">[[</span>
     <span class="s1">'Severity'</span><span class="p">,</span>
@@ -11841,7 +11829,7 @@ Importantly, Severity shows weak correlations with all individual features, with
    macro avg       0.65      0.66      0.65       202
 weighted avg       0.70      0.69      0.69       202
 
-Cross-validated Accuracy: 0.5696653628857018 (+/- 0.09619788989512294)
+Cross-validated recall: 0.5696653628857018 (+/- 0.09619788989512294)
 </pre>
 </div>
 </div>
@@ -11874,7 +11862,7 @@ Cross-validated Accuracy: 0.5696653628857018 (+/- 0.09619788989512294)
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [257]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="c1"># Confusion matrix, compares predictions vs actual values</span>
